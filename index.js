@@ -53,7 +53,7 @@ const getAllLibraries = async () => {
 };
 
 const letterboxd = async () => {
-   return await fetch(`https://letterboxd.com/${process.env.USERNAME}/watchlist/`)
+   return await fetch(`https://letterboxd.com/${process.env.PLEX_USER}/watchlist/`)
       .then((response) => response.text())
       .then((html) => {
          let $ = cheerio.load(html);
