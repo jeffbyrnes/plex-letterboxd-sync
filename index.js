@@ -67,7 +67,7 @@ const letterboxd = async () => {
 };
 const getLbMovieInfo = async (movies) => {
    const getFilm = async ({ filmId, filmSlug }) => {
-      return await fetch(`https://letterboxd.com${filmSlug}`)
+      return await fetch(`https://letterboxd.com/${filmSlug}`)
          .then((response) => response.text())
          .then((html) => {
             let $ = cheerio.load(html);
