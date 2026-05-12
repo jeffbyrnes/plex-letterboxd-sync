@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "dotenv": "^16.0.3",
+    "dotenv": "^17.4.2",
     "forever-monitor": "^3.0.3",
     "lodash.find": "^4.6.0",
     "log-to-file": "^3.0.3",
